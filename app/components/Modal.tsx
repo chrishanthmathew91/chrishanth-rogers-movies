@@ -51,6 +51,8 @@ function titleCase(value: string): string {
         if (shouldUpcase) {
             title += value[i].toUpperCase();
             shouldUpcase = false;
+        } else {
+            title += value[i];
         }
         if (value[i] === ' ') {
             shouldUpcase = true;
